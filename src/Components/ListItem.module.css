@@ -1,0 +1,42 @@
+.task {
+  margin: 2% 1%;
+  display: flex;
+  background-color: #363f1770;
+  border-radius: 10px;
+}
+
+.task .priority .danger {
+  background-color: red;
+}
+.task .priority .warning {
+  background-color: yellow;
+}
+.task .priority .success {
+  background-color: green;
+}
+
+.task .priority {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.task .priority .circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+}
+
+.task .task-details {
+  width: 100%;
+  padding: 10px;
+}
+
+.task .task-captions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+  color: lightgray;
+}

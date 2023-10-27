@@ -1,0 +1,106 @@
+/* For mobile and up */
+.todo-form {
+  position: fixed;
+  color: white;
+  width: 95%;
+  bottom: 1%;
+  background-color: #339f1c94;
+  text-align: center;
+  padding: 1%;
+  display: flex;
+  gap: 5px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+  z-index: 100;
+}
+
+.todo-form input {
+  all: unset;
+  font-size: 32px;
+  padding: 5px;
+  border-radius: 50%;
+  width: 80%;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.todo-form button {
+  all: unset;
+  color: #339f1c94;
+  background-color: white;
+  width: 50px;
+  font-size: 60px;
+  border-radius: 76px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* For tablet and up */
+@media only screen and (min-width: 481px) {
+  .todo-form {
+    position: static;
+    margin: 0 auto;
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 2px;
+  }
+
+  .todo-form h2 {
+    font-size: 32px;
+  }
+
+  .todo-form input {
+    all: unset;
+    border: 2px solid lightcoral;
+    padding: 5px;
+    border-radius: 2px;
+  }
+
+  .todo-form button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid lightgray;
+    width: 20%;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .todo-form .disabled {
+    background-color: lightgray;
+    color: white;
+    cursor: not-allowed;
+  }
+}
+
+/* spin loader */
+.loader {
+  border: 3px solid rgb(243, 187, 187); /* Light grey */
+  border-top: 3px solid lightcoral; /* Blue */
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 1.6s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
